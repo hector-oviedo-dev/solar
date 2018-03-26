@@ -9,13 +9,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" [ngx-scroll-to]="'#energia'">CALCULA TU ENERGIA</a>
+                    <a class="nav-link" (click)="scroll(energia)">CALCULA TU ENERGIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [ngx-scroll-to]="'#kits'">LISTA DE KITS</a>
+                    <a class="nav-link" (click)="scroll(kits)">LISTA DE KITS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [ngx-scroll-to]="'#contacto'">CONTACTO</a>
+                    <a class="nav-link" (click)="scroll(contacto)">CONTACTO</a>
                 </li>
             </ul>
             <ul class="navbar-nav nav-flex-icons">
@@ -31,25 +31,3 @@
 
 </header>
 <!--Main Navigation-->
-
-
-<app-showcase>
-</app-showcase>
-
-<div class="container">
-
-  <app-calculator id="energia">
-  </app-calculator>
-
-  <app-kits id="kits">
-  </app-kits>
-
-  <app-contact id="contacto">
-  </app-contact>
-
-</div>
-
-
-
-<app-footer>
-</app-footer>

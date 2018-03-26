@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  scroll(element) {
+    window.scrollTo(element.yPosition)
+    //element.scrollIntoView();
+}
 }
