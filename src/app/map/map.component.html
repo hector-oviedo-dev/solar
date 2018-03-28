@@ -1,0 +1,54 @@
+<!--Section: Contact v.1-->
+<section class="py-3">
+
+    <!--Section heading-->
+    <h2 class="font-weight-bold text-center h1 py-5">Ubicacion</h2>
+    <!--Section description-->
+    <p class="text-center mb-5 pb-4">Nuestra oficina principal se encuentra en capital federal, buenos aires argentina.</p>
+
+    <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-12">
+
+            <!--Google map-->
+            <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px">
+                <agm-map [latitude]="lat" [longitude]="lng" style="height: 400px;">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+              </agm-map>
+        </div>
+
+            <br>
+            <!--Buttons-->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a class="btn-floating accent-1">
+                        <i class="fa fa-map-marker"></i>
+                    </a>
+                    <p>Buenos Aires, CP 1404</p>
+                    <p>Argentina</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="btn-floating accent-1">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                    <p>+ 54 234 567 89</p>
+                    <p>Lunes - Viernes, 8:00-22:00</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="btn-floating accent-1">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <p>info@gmail.com</p>
+                    <p>ventas@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.1-->

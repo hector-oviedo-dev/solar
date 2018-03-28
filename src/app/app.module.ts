@@ -6,28 +6,33 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
-import { NavigatorComponent } from './navigator/navigator.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { KitsComponent } from './kits/kits.component';
+import { MapComponent } from './map/map.component';
+
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigatorComponent,
     ShowcaseComponent,
     CalculatorComponent,
     ContactComponent,
     FooterComponent,
-    KitsComponent
+    KitsComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmCWgMpZOgQeuykgyOcE9tE-cQdnYYcXU'
+    })
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
