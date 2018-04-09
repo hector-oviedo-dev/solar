@@ -58,6 +58,7 @@ import {
   MatDialogRef,
   MAT_DIALOG_DATA,
 } from '@angular/material';
+import { HowtoComponent } from './howto/howto.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import {
     ContactComponent,
     FooterComponent,
     KitsComponent,
-    MapComponent
+    MapComponent,
+    HowtoComponent
   ],
   imports: [
     HttpClientModule,
